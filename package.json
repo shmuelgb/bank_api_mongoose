@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/shmuelgb/bank_api_mongoose#readme",
   "dependencies": {
+    "concurrently": "^7.0.0",
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "mongoose": "^6.1.7",
