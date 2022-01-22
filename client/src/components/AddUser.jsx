@@ -9,14 +9,18 @@ export default function AddUser() {
   const [credit, setCredit] = useState();
 
   const handleSubmit = async () => {
-    const newUser = {
-      user_id: id,
-      name: name,
-      cash: cash,
-      credit: credit,
-    };
-    await Axios.post(`${domain}/api/users`, newUser);
-    console.log("User added");
+    try {
+      const newUser = {
+        user_id: id,
+        name: name,
+        cash: cash,
+        credit: credit,
+      };
+      const userRes = await Axios.post(`${domain}/api/users`, newUser);
+      console.log("User added", userRes.data);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (

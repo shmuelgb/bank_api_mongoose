@@ -8,11 +8,15 @@ import domain from "./utils";
 
 function App() {
   const handleUpdate = async (id, action, amount) => {
-    const { data } = await axios.patch(`${domain}/api/users/${id}`, {
-      action: action,
-      amount: amount,
-    });
-    console.log(data);
+    try {
+      const { data } = await axios.patch(`${domain}/api/users/${id}`, {
+        action: action,
+        amount: amount,
+      });
+      console.log(data);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (

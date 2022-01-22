@@ -8,12 +8,16 @@ export default function Transfer() {
   const [amount, setAmount] = useState();
 
   const handleSend = async () => {
-    const { data } = await Axios.patch(`${domain}/api/users/${id}`, {
-      action: "transfer",
-      amount: amount,
-      to: idTo,
-    });
-    console.log(data);
+    try {
+      const { data } = await Axios.patch(`${domain}/api/users/${id}`, {
+        action: "transfer",
+        amount: amount,
+        to: idTo,
+      });
+      console.log(data);
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
