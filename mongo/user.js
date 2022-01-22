@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
-const connectionUri = process.env.MONGO_URI;
+// const connectionUri = process.env.MONGO_URI;
+const connectionUri =
+  "mongodb+srv://shmuelgb:8265@free-cluster.3nmwg.mongodb.net";
 
 mongoose.connect(`${connectionUri}/bankApiMongooseApp`, {
   useNewUrlParser: true,
