@@ -1,2 +1,2 @@
-const domain = "http://localhost:8080";
+const domain = "https://bank-api-mongo.herokuapp.com";
 export default domain;
