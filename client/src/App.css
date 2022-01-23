@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+}
+
+.main {
   display: flex;
   justify-content: space-between;
 }
@@ -10,6 +13,7 @@
   border: 1px solid black;
   padding: 10px;
   width: 23%;
+  border-right: none;
 }
 .add-user input {
   margin: 10px;
@@ -29,4 +33,23 @@
   margin: 5px;
   width: fit-content;
   border: 1px solid grey;
+}
+
+.DisplayUsers {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.query {
+  padding-left: 20px;
+  border-left: 1px solid black;
+}
+
+.user {
+  border-bottom: 1px solid gray;
+}
+.user ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
