@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 export default function Update({ updateFn, action }) {
-  const [id, setId] = useState();
-  const [amount, setAmount] = useState();
+  const [id, setId] = useState("");
+  const [amount, setAmount] = useState(false);
 
   const handleSend = () => {
     updateFn(id, action, amount);

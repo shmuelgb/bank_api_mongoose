@@ -4,9 +4,9 @@ import domain from "../utils";
 
 export default function AddUser() {
   const [name, setName] = useState("");
-  const [id, setId] = useState();
-  const [cash, setCash] = useState();
-  const [credit, setCredit] = useState();
+  const [id, setId] = useState("");
+  const [cash, setCash] = useState("");
+  const [credit, setCredit] = useState("");
 
   const handleSubmit = async () => {
     try {

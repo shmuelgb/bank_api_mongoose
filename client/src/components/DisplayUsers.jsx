@@ -7,6 +7,7 @@ export default function DisplayUsers() {
   const [data, setData] = useState();
   const [user, setUser] = useState();
   const [id, setId] = useState();
+  const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -14,7 +15,7 @@ export default function DisplayUsers() {
       setData(data);
     };
     fetchData();
-  }, []);
+  }, [refresh]);
 
   const renderUsers = () => {
     return data.map((user) => {
@@ -31,6 +32,7 @@ export default function DisplayUsers() {
     <div className="DisplayUsers">
       <div className="all-users">
         <h2>Display Users</h2>
+        <button onClick={() => setRefresh(!refresh)}>Refresh</button>
         {data && renderUsers()}
       </div>
       <div className="query">
