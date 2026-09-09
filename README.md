@@ -4,9 +4,7 @@ This weekend exercise is aimed to practice basic CRUD operation with Mongoose as
 In addition, this exercise aims to practice deploying both server and client sides to Heroku, in one repo.
 Please note: this weekend exercise was done in a time frame of, well, a weekend. Therefore things like styling the UI, and giving the user action feedback, and other non-core features were cut out of this project, as they were not the focus of this assignment.
 
-## Visit Live Demo:
-
-https://bank-api-mongo.herokuapp.com
+(The original live demo is offline - it was hosted on Heroku's free tier, which was discontinued.)
 
 ## Technologies used in this project:
 
